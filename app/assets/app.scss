@@ -39,7 +39,12 @@ button {
 
 .map {
   display: flex;
-  background-color: 
+  padding: 2rem;
+  background-color: #ee2a7b;
+
+  &__phone {
+    text-decoration: underline;
+  }
 
   &__display {
   }
@@ -51,7 +56,6 @@ button {
 
   &__text {
     font-size: 3.6rem;
-    color: royalblue;
     margin-bottom: 1rem;
   }
 
@@ -75,11 +79,12 @@ button {
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
+  padding: 0 4rem;
 
   &__logo {
     width: 400px;
@@ -119,6 +124,10 @@ button {
 
     &-link {
       font-size: 3rem;
+    }
+
+    &-link > i {
+      color: #ee2a7b;
     }
   }
 }
@@ -167,6 +176,7 @@ button {
 
   &__header {
     font-size: 6rem;
+    margin-top: 7rem;
   }
 
   &__item-heading {
