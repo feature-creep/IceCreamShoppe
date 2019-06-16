@@ -20,6 +20,6 @@
   "homepage": "https://github.com/feature-creep/IceCreamShoppe#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
-    "sass": "^1.20.1"
+    "sass": "^1.21.0"
   }
 }

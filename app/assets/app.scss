@@ -51,7 +51,7 @@ button {
 
   &__text-wrapper {
     margin: auto;
-    font-family: 'Kreon', sans-serif;
+    font-family: 'Alegreya', serif;
   }
 
   &__text {
@@ -68,7 +68,7 @@ button {
 .name-of-the-day {
   background-color: deepskyblue;
   font-size: 2.5rem;
-  font-family: 'Kreon', sans-serif;
+  font-family: 'Alegreya', serif;
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -108,7 +108,7 @@ button {
     }
     
     &-link {
-      font-family: 'Kreon', sans-serif;
+      font-family: 'Alegreya', serif;
       font-size: 2rem;
     }
   }
@@ -156,7 +156,7 @@ button {
 
   &__text {
     font-size: 5rem;
-    font-family: 'Kreon';
+    font-family: 'Alegreya', serif;
     color: white;
   }
 
@@ -172,7 +172,19 @@ button {
 
 .menu {
   margin: 1.6rem auto;
-  font-family: 'Kreon';
+  font-family: 'Alegreya', serif;
+
+  &__section--ice-cream {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__ice-cream-group {
+    margin: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
 
   &__header {
     font-size: 6rem;
@@ -181,41 +193,39 @@ button {
 
   &__item-heading {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
+    margin-top: auto;
+  }
+
+  &__indent {
+    padding-left: 3rem;
+  }
+
+  &__item-subheading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: auto;
   }
 
   &__item {
     font-size: 2rem;
   }
 
-  &__item-sizes-prices {
-    display: flex;
-    padding: 1rem;
-    font-size: 2rem;
+  &__item-list {
+    margin-bottom: 4rem;
   }
 
   &__item-sizes {
-    margin-right: 1em;
-  }
-
-  &__item-size {
-    
+    margin-right: 6rem;
   }
 
   &__item-prices {
-
+    font-weight: bold;
   }
 
-  &__item-list {
-    padding: 1rem;
-  }
-  
-  &__ice-cream {
- 
-  }
-
-  &__food {
-
+  &__item-sizes-prices {
+    display: flex;
+    font-size: 2rem;
   }
 }
 
