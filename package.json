@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel app/index.html",
     "watch": "parcel watch app/index.html",
-    "build": "parcel build app/index.html --public-url /IceCreamShoppe"
+    "build": "parcel build app/index.html --public-url /IceCreamShoppe && cd dist && git commit -am \"design iteration\" && git push origin gh-pages"
   },
   "repository": {
     "type": "git",
