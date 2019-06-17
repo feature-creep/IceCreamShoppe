@@ -10,151 +10,163 @@
   <link rel="stylesheet" href="assets/app.scss">
 </head>
 <body>
-  <header class="header">
+  <header class="header container space-evenly center">
     <div class="header__logo-box">
       <img class="header__logo" src="assets/logo.svg" alt="logo">
     </div>
     <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li id="menu" class="header__nav-item"><a class="header__nav-link" href="#menu-section">Menu</a></li>
-        <li id="machine-rentals" class="header__nav-item"><a class="header__nav-link" href="events.html">Events</a></li>
-        <li id="contact" class="header__nav-item"><a class="header__nav-link" href="contact.html">Contact</a></li>
-        <li id="about us" class="header__nav-item"><a class="header__nav-link" href="about.html">About Us</a></li>
+      <ul class="header__nav-list container">
+        <li id="menu" class="header__nav-item mh-1"><a class="header__nav-link font-size-2" href="#menu-section">Menu</a></li>
+        <li id="machine-rentals" class="header__nav-item mh-1"><a class="header__nav-link font-size-2" href="events.html">Events</a></li>
+        <li id="contact" class="header__nav-item mh-1"><a class="header__nav-link font-size-2" href="contact.html">Contact</a></li>
+        <li id="about us" class="header__nav-item mh-1"><a class="header__nav-link font-size-2" href="about.html">About Us</a></li>
       </ul>
-      
     </nav>
     <nav class="header__social-nav">
-      <ul class="header__social-nav-list">
+      <ul class="header__social-nav-list container">
         <li class="header__social-nav-item">
           <a class="header__social-nav-link" href="#">
-            <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram font-size-3"></i>
           </a>
         </li>
         <li class="header__social-nav-item">
-          <a class="header__social-nav-link" href="#">
+          <a class="header__social-nav-link font-size-3" href="#">
             <i class="fab fa-facebook"></i>
           </a>
         </li>
         <li class="header__social-nav-item">
-          <a class="header__social-nav-link" href="#">
+          <a class="header__social-nav-link font-size-3" href="#">
             <i class="fab fa-twitter-square"></i>
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <div class="name-of-the-day">If your name is ####, come stop by for a free ice cream cone!</div>
-  <div class="container">
+  <!-- <div class="name-of-the-day font-size-2">If your name is ####, come stop by for a free ice cream cone!</div> -->
+  <div class="container col">
     <section class="hero">
-      <img src="assets/ice-cream-3-m.jpg" alt="ice cream" class="hero__img">
-      <div class="hero__text-area">
+      <img srcset="/assets/soft-serve-lg.jpg 1920w,/assets/soft-serve-md.jpg 1280w,/assets/soft-serve-sm.jpg 640w"
+        sizes="(max-width: 640px)"
+        alt="ice cream" class="hero__img">
+      <!-- <div class="hero__text-area">
         <span class="hero__text">Call ahead for takeout orders <button class="hero__button" href="tel:6166366000">616-636-6000 <i class="fas fa-phone"></i></button></span>
-      </div>
+      </div> -->
     </section>
-    <section class="menu" id="menu-section">
-      <div class="menu__header">Menu</div>
-      <section class="menu menu__ice-cream">
-        <div class="menu__section--ice-cream">
-          <div class="menu__ice-cream-group">
-            <div class="menu__item-subheading">Add-Ons</div>
-            <div class="menu__item-list">
-              <div class="menu__item">Ice Cream Dip</div>
-              <div class="menu__indent">
-                <div class="menu__item">Cherry <span class="menu__item-prices">+$0.50</span></div>
-                <div class="menu__item">Chocolate <span class="menu__item-prices">+$0.50</span></div>
-                <div class="menu__item">Nuts <span class="menu__item-prices">+$0.70</span></div>
-                <div class="menu__item">Pecans <span class="menu__item-prices">+$1.25</span></div>
-                <div class="menu__item">Sprinkles <span class="menu__item-prices">+$0.40</span></div>
+    <section class="menu container col center m-0-auto" id="menu-section">
+      <div class="menu__header font-size-8 mv-3">Menu</div>
+      <section class="menu__ice-cream">
+        <div class="menu__section--ice-cream container flex-end">
+          <div class="menu__ice-cream-group container col m-3 center">
+            <div class="menu__item-heading font-size-3 text-italic mv-1">Add-Ons</div>
+            <div class="menu__item-list container col">
+              <div class="menu__item font-size-2">Ice Cream Dip</div>
+              <div class="container mv-1">
+                <div class="menu__items container col flex-end">
+                  <div class="menu__item font-size-1">Cherry</div>
+                  <div class="menu__item font-size-1">Chocolate</div>
+                  <div class="menu__item font-size-1">Nuts</div>
+                  <div class="menu__item font-size-1">Pecans</div>
+                  <div class="menu__item font-size-1">Sprinkles</div>
+                </div>
+                <div class="menu__item-prices container col ml-auto">
+                  <div class="menu__item-price font-size-1 text-italic">+$0.50</div>
+                  <div class="menu__item-price font-size-1 text-italic">+$0.50</div>
+                  <div class="menu__item-price font-size-1 text-italic">+$0.70</div>
+                  <div class="menu__item-price font-size-1 text-italic">+$1.25</div>
+                  <div class="menu__item-price font-size-1 text-italic">+$0.40</div>
+                </div>
               </div>
-              
+              <div class="menu__item font-size-2">Sugar Buzz</div>
+              <div class="container col">
+                <p>Need more candy in your Flurry or Sundae?</p>
+              </div>
             </div>
           </div>
 
-          <div class="menu__ice-cream-group">
-            <div class="menu__item-heading">Soft Serve</div>
-            <div class="menu__item-list">
-              <div class="menu__item">Vanilla</div>
-              <div class="menu__item">Twist</div>
-              <div class="menu__item">Chocolate</div>
+          <div class="menu__ice-cream-group container col m-3">
+            <div class="menu__item-heading font-size-3 text-italic mv-1">Soft Serve</div>
+            <div class="menu__item-list container col flex-end">
+              <div class="menu__item font-size-1">Vanilla</div>
+              <div class="menu__item font-size-1">Twist</div>
+              <div class="menu__item font-size-1">Chocolate</div>
             </div>
-            <div class="menu__item-sizes-prices">
-              <div class="menu__item-sizes">
-                <div class="item-size">Kiddie</div>
-                <div class="item-size">Small</div>
-                <div class="item-size">Medium</div>
-                <div class="item-size">Large</div>
+            <div class="container row mv-1">
+              <div class="menu__items container col">
+                <div class="menu__item-size font-size-2">Kiddie</div>
+                <div class="menu__item-size font-size-2">Small</div>
+                <div class="menu__item-size font-size-2">Medium</div>
+                <div class="menu__item-size font-size-2">Large</div>
               </div>
-              <div class="menu__item-prices">
-                <div class="item-price">$1.80</div>
-                <div class="item-price">$2.40</div>
-                <div class="item-price">$2.90</div>
-                <div class="item-price">$3.30</div>
+              <div class="menu__item-prices container col ml-auto">
+                <div class="menu__item-price font-size-2 text-italic">$1.80</div>
+                <div class="menu__item-price font-size-2 text-italic">$2.40</div>
+                <div class="menu__item-price font-size-2 text-italic">$2.90</div>
+                <div class="menu__item-price font-size-2 text-italic">$3.30</div>
               </div>
             </div>
           </div>
           
-          <div class="menu__ice-cream-group">
-            <div class="menu__item-heading">Hand Dipped</div>
-            <div class="menu__item-list">
-              <div class="menu__item">Black Cherry</div>
-              <div class="menu__item">Butter Pecan</div>
-              <div class="menu__item">Chocolate</div>
-              <div class="menu__item">Chocolate Chip Cookie Dough</div>
-              <div class="menu__item">Cotton Candy</div>
-              <div class="menu__item">Grand Traverse Bay Cherry Fudge</div>
-              <div class="menu__item">Mackinaw Island Fudge</div>
-              <div class="menu__item">Michigan Deer Traxx</div>
-              <div class="menu__item">Michigan Pot Hole</div>
-              <div class="menu__item">Mint Chocolate Chip</div>
-              <div class="menu__item">Vanilla</div>
-              <div class="menu__item">Triple Peanut Butter Cup</div>
+          <div class="menu__ice-cream-group m-3">
+            <div class="menu__item-heading font-size-3 text-italic mv-1">Hand Dipped</div>
+            <div class="menu__item-list container col flex-end">
+              <div class="menu__item font-size-1">Black Cherry</div>
+              <div class="menu__item font-size-1">Butter Pecan</div>
+              <div class="menu__item font-size-1">Chocolate</div>
+              <div class="menu__item font-size-1">Chocolate Chip Cookie Dough</div>
+              <div class="menu__item font-size-1">Cotton Candy</div>
+              <div class="menu__item font-size-1">Grand Traverse Bay Cherry Fudge</div>
+              <div class="menu__item font-size-1">Mackinaw Island Fudge</div>
+              <div class="menu__item font-size-1">Michigan Deer Traxx</div>
+              <div class="menu__item font-size-1">Michigan Pot Hole</div>
+              <div class="menu__item font-size-1">Mint Chocolate Chip</div>
+              <div class="menu__item font-size-1">Vanilla</div>
+              <div class="menu__item font-size-1">Triple Peanut Butter Cup</div>
             </div>
             
-            <div class="menu__item-sizes-prices">
-              <div class="menu__item-sizes">
-                <div class="item-size">Kiddie</div>
-                <div class="item-size">Small</div>
-                <div class="item-size">Medium</div>
-                <div class="item-size">Large</div>
+            <div class="menu__item-sizes-prices container mv-1">
+              <div class="menu__item-sizes container col">
+                <div class="item-size font-size-2">Kiddie</div>
+                <div class="item-size font-size-2">Small</div>
+                <div class="item-size font-size-2">Medium</div>
+                <div class="item-size font-size-2">Large</div>
               </div>
-              <div class="menu__item-prices">
-                <div class="item-price">$2.75</div>
-                <div class="item-price">$3.25</div>
-                <div class="item-price">$3.75</div>
-                <div class="item-price">$3.95</div>
+              <div class="menu__item-prices container col ml-auto">
+                <div class="menu__item-price font-size-2 text-italic">$2.75</div>
+                <div class="menu__item-price font-size-2 text-italic">$3.25</div>
+                <div class="menu__item-price font-size-2 text-italic">$3.75</div>
+                <div class="menu__item-price font-size-2 text-italic">$3.95</div>
               </div>
             </div>
           </div>
           
-          <div class="menu__ice-cream-group">
-            <div class="menu__item-heading">Flavor Burst</div>
-            <div class="menu__item-list">
-              <div class="menu__item">Banana</div>
-              <div class="menu__item">Blue Goo</div>
-              <div class="menu__item">Bubblegum</div>
-              <div class="menu__item">Butterscotch</div>
-              <div class="menu__item">Green Apple</div>
-              <div class="menu__item">Tropical Orange</div>
-              <div class="menu__item">Mocha Cappuccino</div>
+          <div class="menu__ice-cream-group m-3">
+            <div class="menu__item-heading font-size-3 text-italic">Flavor Burst</div>
+            <div class="menu__item-list container col flex-end">
+              <div class="menu__item font-size-1">Banana</div>
+              <div class="menu__item font-size-1">Blue Goo</div>
+              <div class="menu__item font-size-1">Bubblegum</div>
+              <div class="menu__item font-size-1">Butterscotch</div>
+              <div class="menu__item font-size-1">Green Apple</div>
+              <div class="menu__item font-size-1">Tropical Orange</div>
+              <div class="menu__item font-size-1">Mocha Cappuccino</div>
             </div>
             
-            <div class="menu__item-sizes-prices">
-              <div class="menu__item-sizes">
-                <div class="item-size">Kiddie</div>
-                <div class="item-size">Small</div>
-                <div class="item-size">Medium</div>
-                <div class="item-size">Large</div>
+            <div class="menu__item-sizes-prices container mv-1">
+              <div class="menu__item-sizes container col">
+                <div class="item-size font-size-2">Kiddie</div>
+                <div class="item-size font-size-2">Small</div>
+                <div class="item-size font-size-2">Medium</div>
+                <div class="item-size font-size-2">Large</div>
               </div>
-              <div class="menu__item-prices">
-                <div class="item-price">$1.85</div>
-                <div class="item-price">$2.70</div>
-                <div class="item-price">$3.20</div>
-                <div class="item-price">$3.70</div>
+              <div class="menu__item-prices container col ml-auto">
+                <div class="menu__item-price font-size-2 text-italic">$1.85</div>
+                <div class="menu__item-price font-size-2 text-italic">$2.70</div>
+                <div class="menu__item-price font-size-2 text-italic">$3.20</div>
+                <div class="menu__item-price font-size-2 text-italic">$3.70</div>
               </div>
             </div>
           </div>
-          
-          
+
         </div>
       </section>
       <section class="menu menu__food">
