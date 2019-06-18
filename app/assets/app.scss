@@ -395,7 +395,7 @@ button {
 
 .menu {
   font-family: 'Alegreya', serif;
-  max-width: 100rem;
+  max-width: 80rem;
 
   &__section--ice-cream {
     // display: flex;
@@ -407,6 +407,11 @@ button {
     // flex-direction: column;
     min-width: 20rem;
     max-width: 23rem;
+    margin: 4rem 8rem;
+
+    @include lg {
+      margin: 2rem 4rem;
+    }
   }
 
   &__header {
@@ -436,7 +441,6 @@ button {
   }
 
   &__item-sizes-price {
-    display: flex;
   }
 }
 
