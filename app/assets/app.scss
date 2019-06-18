@@ -97,8 +97,12 @@ button {
   justify-content: space-evenly;
 }
 
-.center {
+.vcenter {
   align-items: center;
+}
+
+.hcenter {
+  justify-content: center;
 }
 
 .w-100 {
@@ -295,10 +299,15 @@ button {
   top: 0;
   z-index: 100;
   width: 100%;
-  padding: 0 4rem;
+
+  @include md {
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 
   @include lg {
-    flex-direction: column;
+    
+    flex-wrap: wrap;
   }
 
   &__logo {
@@ -331,7 +340,16 @@ button {
     }
 
     &-link {
-
+      & > i {
+        @include sm {
+          margin-top: 1rem;
+        }
+        @include lg {
+          font-size: 3rem;
+          // margin: 1rem;
+          align-self: center;
+        }
+      }
     }
 
     &-link > i {
@@ -353,7 +371,7 @@ button {
     max-height: 70rem;
     width: 100%;
     object-fit: cover;
-    object-position: 0% 25%;
+    object-position: 0% 15%;
   }
 
   &__text-area {
@@ -388,6 +406,7 @@ button {
     // display: flex;
     // flex-direction: column;
     min-width: 20rem;
+    max-width: 23rem;
   }
 
   &__header {
