@@ -314,6 +314,9 @@ button {
 
   &__logo {
     width: 400px;
+    @include sm {
+      margin: 1rem;
+    }
     @include md {
       width: 350px;
     }
@@ -351,8 +354,6 @@ button {
     &-link {
       & > i {
         @include lg {
-          font-size: 3rem;
-          // margin: 1rem;
           align-self: center;
         }
       }
