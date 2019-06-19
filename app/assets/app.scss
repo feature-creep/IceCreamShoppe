@@ -117,7 +117,6 @@ button {
   font-weight: bold;
 }
 
-
 .text-italic {
   font-style: italic;
 }
@@ -300,22 +299,32 @@ button {
   z-index: 100;
   width: 100%;
 
+  @include sm {
+    margin: 0;
+  }
+
   @include md {
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
   }
 
   @include lg {
-    
     flex-wrap: wrap;
   }
 
   &__logo {
     width: 400px;
+    @include md {
+      width: 350px;
+    }
+    @include lg {
+      width: 300px;
+    }
   }
 
   &__logo-box {
     & > img {
+      
     }
   }
 
@@ -341,9 +350,6 @@ button {
 
     &-link {
       & > i {
-        @include sm {
-          margin-top: 1rem;
-        }
         @include lg {
           font-size: 3rem;
           // margin: 1rem;
