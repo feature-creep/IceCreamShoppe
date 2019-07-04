@@ -153,6 +153,14 @@ button {
   font-size: 4rem;
 }
 
+.mt-1 {
+  margin-top: 2rem;
+}
+
+.ml-1 {
+  margin-left: 4rem;
+}
+
 .mv-1 {
   margin: 1.6rem 0;
 }
@@ -316,6 +324,7 @@ button {
     width: 400px;
     @include sm {
       margin: 1rem;
+      width: 280px;
     }
     @include md {
       width: 350px;
@@ -374,11 +383,22 @@ button {
   // justify-content: center;
   // align-items: center;
 
+  @include sm {
+    margin-top: 10rem;
+  }
+
   &__img {
     max-height: 70rem;
     width: 100%;
     object-fit: cover;
     object-position: 0% 15%;
+
+    @include md {
+      object-fit: cover;
+      object-position: center;
+      height: 600px;
+      overflow: hidden;
+    }
   }
 
   &__text-area {
@@ -402,18 +422,22 @@ button {
 
 .menu {
   font-family: 'Alegreya', serif;
-  max-width: 80rem;
+  max-width: 100rem;
 
-  &__section--ice-cream {
+  &__ice-cream, &__food, &__beverages {
+
+  }
+
+  &__section--ice-cream, &__section--food, &__section--beverages {
     // display: flex;
     flex-wrap: wrap;
   }
 
-  &__ice-cream-group {
+  &__ice-cream-group, &__food-group, &__beverage-group {
     // display: flex;
     // flex-direction: column;
     min-width: 20rem;
-    max-width: 23rem;
+    max-width: 30rem;
     margin: 4rem 8rem;
 
     @include lg {
@@ -422,6 +446,9 @@ button {
   }
 
   &__header {
+    @include sm {
+      margin-top: 10rem;
+    }
   }
 
   &__item-heading {
@@ -431,20 +458,25 @@ button {
   }
 
   &__item {
+    align-self: flex-start;
+    p {
+      margin-left: 2rem;
+    }
   }
+
 
   &__item-list {
   }
 
   &__items {
-
+    margin-right: 1rem;
   }
 
   &__item-sizes {
   }
 
   &__item-price {
-
+   margin: 0 1rem;
   }
 
   &__item-sizes-price {
