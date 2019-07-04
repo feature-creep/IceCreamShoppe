@@ -37,11 +37,13 @@ $screen-xl-max: 1200px;
 html {
   font-size: 62.5%;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-size: 1.6rem; 
   height: 100%;
+  width: 100%;
 }
 
 li {
@@ -307,8 +309,8 @@ button {
   z-index: 100;
   width: 100%;
 
-  @include sm {
-    margin: 0;
+  @include lg {
+    flex-wrap: wrap;
   }
 
   @include md {
@@ -316,21 +318,21 @@ button {
     justify-content: space-around;
   }
 
-  @include lg {
-    flex-wrap: wrap;
+  @include sm {
+    margin: 0;
   }
 
   &__logo {
     width: 400px;
-    @include sm {
-      margin: 1rem;
-      width: 280px;
-    }
-    @include md {
+    @include lg {
       width: 350px;
     }
-    @include lg {
+    @include md {
       width: 300px;
+    }
+    @include sm {
+      margin: 1rem 0;
+      width: 100%;
     }
   }
 
@@ -388,7 +390,7 @@ button {
   }
 
   &__img {
-    max-height: 70rem;
+    height: auto;
     width: 100%;
     object-fit: cover;
     object-position: 0% 15%;
@@ -422,7 +424,7 @@ button {
 
 .menu {
   font-family: 'Alegreya', serif;
-  max-width: 100rem;
+  max-width: 80rem;
 
   &__ice-cream, &__food, &__beverages {
 
@@ -437,7 +439,7 @@ button {
     // display: flex;
     // flex-direction: column;
     min-width: 20rem;
-    max-width: 30rem;
+    max-width: 28rem;
     margin: 4rem 8rem;
 
     @include lg {
@@ -446,9 +448,9 @@ button {
   }
 
   &__header {
-    @include sm {
-      margin-top: 10rem;
-    }
+    // @include sm {
+    //   margin-top: 10rem;
+    // }
   }
 
   &__item-heading {
@@ -466,6 +468,7 @@ button {
 
 
   &__item-list {
+    max-width: 20rem;
   }
 
   &__items {
@@ -476,7 +479,6 @@ button {
   }
 
   &__item-price {
-   margin: 0 1rem;
   }
 
   &__item-sizes-price {
