@@ -273,26 +273,47 @@ button {
 }
 
 .map {
-  padding: 2rem;
-  background-color: #ee2a7b;
+  background-color: deepskyblue;
+  // padding: 4rem;
+  
+  @include md {
+    // padding: 4rem 0;
+  }
+
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__phone {
     text-decoration: underline;
   }
 
   &__display {
+    height: 100%;
   }
 
   &__text-wrapper {
     font-family: 'Alegreya', serif;
+    color: white;
+    // margin-left: 4rem;
+    padding: 4rem;
   }
 
   &__text {
+    
   }
 
   &__directions, &__phone {
     font-weight: 800;
+    a {
+      color: white;
+    }
   }
+}
+
+.mapouter {
+  // width: 600px;
 }
 
 .name-of-the-day {
@@ -324,16 +345,13 @@ button {
   }
 
   &__logo {
-    width: 400px;
-    @include lg {
-      width: 350px;
-    }
-    @include md {
-      width: 300px;
-    }
+    width: 350px;
+    max-width: 350px;
+    padding: 1rem;
     @include sm {
       margin: 1rem 0;
       width: 100%;
+      padding: 0 .5rem;
     }
   }
 
