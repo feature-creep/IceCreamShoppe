@@ -414,6 +414,7 @@ button {
     width: 100%;
     object-fit: cover;
     object-position: 0% 15%;
+    max-height: 600px;
 
     @include md {
       object-fit: cover;
