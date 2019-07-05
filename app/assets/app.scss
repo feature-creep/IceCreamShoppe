@@ -460,11 +460,7 @@ button {
     // flex-direction: column;
     min-width: 20rem;
     max-width: 28rem;
-    margin: 4rem 8rem;
-
-    @include lg {
-      margin: 2rem 4rem;
-    }
+    margin: 2rem 4rem;
   }
 
   &__header {
